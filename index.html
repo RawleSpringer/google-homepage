@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 30px;
+        font-size: 14px;
+        align-items: center;
+      }
+
+      a {
+        outline-style: none;
+        text-decoration: none;
+        color: #000;
+        margin-right: 15px;
+      }
+
+      .box-icon {
+        height: 4px;
+        width: 4px;
+        background-color: #000;
+        margin-left: 2px;
+        margin-top: 2px;
+      }
+      .box-icon-container {
+        display:flex;
+        width: 20px;
+        flex-wrap: wrap;
+      }
+
+      #avatar {
+        height: 36px;
+        width: 36px;
+        background-color: #000;
+        border-radius: 50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      p {
+        
+      }
+      
+      footer {
+        display:flex;
+        justify-content: space-between;
+      }
+
+      #left-side-footer {
+
+      }
+
+      #right-side-footer {
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- HEADER -->
+      <nav>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a href="#" class="box-icon-container" />
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+          <div class="box-icon"></div>
+        </a>
+        <a href="#">
+          <div id="avatar">
+            <p>TOP</p>
+          </div>
+        </a>
+      </nav>
+
+      <footer>
+        <div class="left-side-footer">
+          <p>Advertising</p>
+          <p>Business</p>
+          <p>About</p>
+          <p>How Search works</p>
+        </div>
+        
+        <div class="right-side-footer">
+          <p>Privacy</p>
+          <p>Terms</p>
+          <p>Settings</p>
+        </div>
+        
+      </footer>
+    </div>
+  </body>
+</html>
