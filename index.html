@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
     <style>
+      body {
+        margin: 0;
+      }
       nav {
         display: flex;
         justify-content: flex-end;
@@ -45,21 +48,30 @@
       }
 
       p {
-        
+        margin-right: 20px;
       }
       
       footer {
         display:flex;
         justify-content: space-between;
+        padding: 5px 30px;
+        background-color: gray;
       }
 
       #left-side-footer {
-
+        display:flex;
       }
 
       #right-side-footer {
-        
+        display:flex; 
       }
+
+      #top-footer {
+        background-color: gray;
+        padding: 15px 30px;
+        border: 1px solid black;
+      }
+      
     </style>
   </head>
   <body>
@@ -85,16 +97,19 @@
           </div>
         </a>
       </nav>
-
+      <!-- MAIN CONTENT -->
+      
+      <!-- FOOTER -->
+      <div id="top-footer">Bahamas</div>
       <footer>
-        <div class="left-side-footer">
+        <div id="left-side-footer">
           <p>Advertising</p>
           <p>Business</p>
           <p>About</p>
           <p>How Search works</p>
         </div>
         
-        <div class="right-side-footer">
+        <div id="right-side-footer">
           <p>Privacy</p>
           <p>Terms</p>
           <p>Settings</p>
