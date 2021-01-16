@@ -8,6 +8,7 @@
       body {
         margin: 0;
         height: 100%;
+        font-family: arial,sans-serif;
       }
 
       #main {
@@ -20,7 +21,7 @@
       nav {
         display: flex;
         justify-content: flex-end;
-        padding: 10px 30px;
+        padding: 12px 15px;
         font-size: 14px;
         align-items: center;
       }
@@ -35,7 +36,7 @@
       .box-icon {
         height: 4px;
         width: 4px;
-        background-color: #000;
+        background-color:#202124;
         margin-left: 2px;
         margin-top: 2px;
       }
@@ -73,13 +74,14 @@
         display:flex;
         justify-content: space-between;
         padding: 5px 30px;
-        background-color: gray;
+        background-color: #f2f2f2;
         margin-top: auto;
        
       }
 
       #left-side-footer {
         display:flex;
+        color:rgba(0,0,0,.54);
       }
 
     
@@ -87,6 +89,7 @@
 
       #right-side-footer {
         display:flex; 
+        color:rgba(0,0,0,.54);
       }
 
 
@@ -94,8 +97,8 @@
         display:flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 95px;
       
-
       }
 
       section > div {
@@ -105,23 +108,23 @@
       
       #input-box {
         position: relative;
-        width: 40%;
+        width: 45%;
       }
 
       input {
-        padding: 10px 0px;
+        padding: 15px 0px;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 25px;
         border-width: thin;
+        border-color:lightgray;
       }
 
       #search-icon {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         position: absolute;
-        top: 25%;
-    
-        left: 10px;
+        top: 35%;
+        left: 15px;
       }
 
       #mic-icon {
@@ -129,8 +132,15 @@
         height: 20px;
         position: absolute;
         top: 25%;
-        right: 10px;
+        right: 15px;
         
+      }
+
+      button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #f8f9fa;
+        color:#3c4043;
       }
 
 
@@ -168,8 +178,8 @@
         </div>
         <div id="input-box">
           <input />
-          <img id="search-icon" src="./icon-search.svg"/>
-          <img id="mic-icon" src="./icon-microphone.svg"/>
+          <img id="search-icon" src="./search.svg"/>
+          <img id="mic-icon" src="./google-mic.svg"/>
         </div>
         <div>
           <button>
