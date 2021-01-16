@@ -7,7 +7,16 @@
     <style>
       body {
         margin: 0;
+        height: 100%;
       }
+
+      #main {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+  
       nav {
         display: flex;
         justify-content: flex-end;
@@ -44,11 +53,20 @@
         display:flex;
         justify-content: center;
         align-items: center;
+        background-color: green;
+        
        
       }
 
       p {
+        margin: 6px;
         margin-right: 20px;
+      }
+
+      h1 {
+        color:white;
+        font-weight: lighter;
+        font-size: 18px;
       }
       
       footer {
@@ -56,26 +74,71 @@
         justify-content: space-between;
         padding: 5px 30px;
         background-color: gray;
+        margin-top: auto;
+       
       }
 
       #left-side-footer {
         display:flex;
       }
 
+    
+
+
       #right-side-footer {
         display:flex; 
       }
 
-      #top-footer {
-        background-color: gray;
-        padding: 15px 30px;
-        border: 1px solid black;
+
+      section {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      
+
+      }
+
+      section > div {
+        margin-bottom: 30px;
+       
       }
       
+      #input-box {
+        position: relative;
+        width: 40%;
+      }
+
+      input {
+        padding: 10px 0px;
+        width: 100%;
+        border-radius: 20px;
+        border-width: thin;
+      }
+
+      #search-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 25%;
+    
+        left: 10px;
+      }
+
+      #mic-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 25%;
+        right: 10px;
+        
+      }
+
+
+
     </style>
   </head>
   <body>
-    <div>
+    <div id="main">
       <!-- HEADER -->
       <nav>
         <a href="#">Gmail</a>
@@ -93,14 +156,32 @@
         </a>
         <a href="#">
           <div id="avatar">
-            <p>TOP</p>
+            <h1>R</h1>
           </div>
         </a>
       </nav>
+
       <!-- MAIN CONTENT -->
-      
+      <section>
+        <div>
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+        </div>
+        <div id="input-box">
+          <input />
+          <img id="search-icon" src="./icon-search.svg"/>
+          <img id="mic-icon" src="./icon-microphone.svg"/>
+        </div>
+        <div>
+          <button>
+            Google Search
+          </button>
+          <button>
+            Im feeling lucky
+          </button>
+        </div>
+      </section>
       <!-- FOOTER -->
-      <div id="top-footer">Bahamas</div>
+    
       <footer>
         <div id="left-side-footer">
           <p>Advertising</p>
@@ -116,6 +197,7 @@
         </div>
         
       </footer>
+   
     </div>
   </body>
 </html>
